@@ -61,26 +61,28 @@ const Hero = () => {
 
   const one = <h1>Hi, my name is</h1>;
   const two = <h2 className="big-heading">Nouman Rasheed.</h2>;
-  const three = <h3 className="big-heading"> AI & Software Engineer </h3>;
+  const three = <h3 className="big-heading">AI & Software Engineer</h3>;
   const four = (
     <>
       <p>
-        As an aspiring Backend Engineer, I am passionate about developing backend systems and AI
-        products using Cloud Computing, Data Engineering, and DevOps. My focus lies in Platform, Big
-        Data, and Large Scale Distributed Systems. With expertise in building outstanding digital
-        experiences in AI and Web development. Currently, I’m focused on building optimized Industry
-        AI products at{' '}
+        I am an AI and Software Engineer with expertise in Cloud Computing, Data Engineering, and
+        DevOps. I specialize in backend systems, AI products, and optimizing large-scale distributed
+        systems.
+        <br /> <br />
+        Passionate about technology, I continuously learn and contribute to impactful projects.
+        Currently, I build optimized AI solutions at{' '}
         <a href="https://deeritc.com/" target="_blank" rel="noreferrer">
           DeerItc
         </a>
-        .
+        . Let's connect to explore collaborations and innovative projects.
       </p>
     </>
   );
+
   const five = (
     <a
       className="email-link"
-      href="https://www.newline.co/courses/build-a-spotify-connected-app"
+      href="mailto:muhmmadnouman945@gmail.com"
       target="_blank"
       rel="noreferrer">
       Get in Touch!

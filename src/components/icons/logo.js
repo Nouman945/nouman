@@ -16,6 +16,7 @@ const IconLogo = () => (
         <path
           d="M 4.5 35 L 0 35 L 0 0 L 6.3 0 L 21.75 29.1 L 21.75 0 L 26.25 0 L 26.25 35 L 20.05 35 L 4.5 6.1 L 4.5 35 Z"
           fill="currentColor"
+          transform="translate(25, 25)"
         />
       </g>
     </g>

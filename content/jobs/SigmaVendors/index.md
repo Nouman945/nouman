@@ -1,12 +1,13 @@
 ---
-date: '2018-05-14'
-title: 'AI Engineer'
-company: 'SigmaVendors'
-location: 'Pakistan, Islamabad'
+date: '2022-04-24'
+title: 'AI Computer Vision Engineer'
+company: 'Sigma Vendors'
+location: 'Islamabad, Pakistan'
 range: 'Feb 2022 - Dec 2022'
 url: 'https://sa.linkedin.com/company/sigma-distributors'
 ---
-- Mask detection and people counting for automated door entery system. 
-- Deployed the Solution on the edge for fast computing and data privacy.
-- Build and styled Dashboard with Statistical analysis in Reactjs.
-- Achieved 95% Detection Accuracy for Masks Detection and People counting.
+
+- Developed a mask detection and people counting system for an automated door entry solution, achieving 95% detection accuracy.
+- Deployed the solution on edge devices to ensure fast computing and enhanced data privacy.
+- Designed and implemented a React.js dashboard for statistical analysis and real-time monitoring, improving data visibility and user interaction by 40%.
+- Collaborated with cross-functional teams to optimize system performance and ensure seamless integration.
