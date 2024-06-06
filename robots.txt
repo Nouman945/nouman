@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+Sitemap: https://nouman945.github.io/sitemap.xml
+Host: https://nouman945.github.io
