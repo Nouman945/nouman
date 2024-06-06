@@ -1,11 +1,12 @@
 const config = require('./src/config');
 
 module.exports = {
+  pathPrefix: '/nouman',
   siteMetadata: {
     title: 'Nouman Rasheed',
     description:
       'Nouman Rasheed is a software engineer who specializes in building (and occasionally designing) exceptional digital experiences.',
-    siteUrl: 'https://brittanychiang.com', // No trailing slash allowed!
+    siteUrl: 'https://nouman945.github.io', // No trailing slash allowed!
     image: '/og.png', // Path to your image you placed in the 'static' folder
     twitterUsername: '@bchiang7',
   },
