@@ -1,5 +1,5 @@
 ---
-date: '2022-04-24'
+date: '2022-03-24'
 title: 'Garbage Detection'
 company: 'Senior Project'
 location: 'Pakistan'
