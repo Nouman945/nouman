@@ -59,22 +59,26 @@ const Hero = () => {
     return () => clearTimeout(timeout);
   }, []);
 
-  const one = <h1>Hi, my name is</h1>;
-  const two = <h2 className="big-heading">Nouman Rasheed.</h2>;
-  const three = <h3 className="big-heading">AI & Software Engineer</h3>;
+  const one = <h1>Hello, I'm</h1>;
+  const two = <h2 className="big-heading">Nouman Rasheed</h2>;
+  const three = <h3 className="big-heading">Deep Learning & Computer Vision Engineer</h3>;
   const four = (
     <>
       <p>
-        I am an AI and Software Engineer with expertise in Cloud Computing, Data Engineering, and
-        DevOps. I specialize in backend systems, AI products, and optimizing large-scale distributed
-        systems.
-        <br /> <br />
-        Passionate about technology, I continuously learn and contribute to impactful projects.
-        Currently, I build optimized AI solutions at{' '}
+        I specialize in developing advanced AI solutions with a focus on deep learning and computer vision. My expertise lies in creating innovative systems 
+        that tackle complex challenges across various industries.
+      </p>
+      <p>
+        With a strong background in AI technologies and software engineering, I'm dedicated to pushing the boundaries of what's possible in AI. 
+        My approach combines cutting-edge research with practical implementation, ensuring solutions that are both innovative and effective.
+      </p>
+      <p>
+        Currently, I'm applying my skills at{' '}
         <a href="https://deeritc.com/" target="_blank" rel="noreferrer">
-          DeerItc
+        DeerItc
         </a>
-        . Let's connect to explore collaborations and innovative projects.
+        , where I continue to explore new frontiers in AI. I'm always eager to discuss potential collaborations or share insights about the evolving 
+        landscape of artificial intelligence and its real-world applications.
       </p>
     </>
   );

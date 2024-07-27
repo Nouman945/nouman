@@ -2,13 +2,12 @@
 date: '3'
 title: 'Trading History Analyzer'
 cover: './course-card.jpg'
-external: 'https://www.newline.co/courses/build-a-spotify-connected-app'
-cta: 'https://www.newline.co/courses/build-a-spotify-connected-app'
 tech:
   - React
-  - Express
-  - Spotify API
-  - Styled Components
+  - Django RestAPI
+  - Data Visualization
+  - OpenAI API
+  - PostgreSQL
 ---
 
 A Trading History Analyzer app with an intuitive dashboard displaying key metrics like win rate, portfolio value, and distribution. It tracks positions, average trades, and return on investment.

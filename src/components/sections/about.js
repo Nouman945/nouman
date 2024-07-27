@@ -126,24 +126,31 @@ const About = () => {
   }, []);
 
   const skills = [
-    'Python',
-    'JavaScript',
-    'C++',
-    'Django',
-    'TensorFlow',
-    'PyTorch',
-    'Flask',
-    'Django Rest Framework',
-    'Reactjs',
-    'NodeJs',
-    'AWS',
-    'GCP',
-    'Azure',
-    'Docker',
-    'Kubernetes',
-    'PostgreSQL',
-    'Git',
-    'Microservices',
+    "Deep Learning",
+    "Computer Vision",
+    "TensorFlow",
+    "PyTorch",
+    "Python",
+    "Machine Learning",
+    "Object Detection",
+    "Facial Recognition",
+    "YOLO",
+    "OpenCV",
+    "Keras",
+    "Edge Computing",
+    "Docker",
+    "Kubernetes",
+    "AWS",
+    "CI/CD",
+    "Git",
+    "Django",
+    "FastAPI",
+    "RESTful APIs",
+    "JavaScript",
+    "React",
+    "SQL",
+    "Data Analysis",
+    "Streamlit"
   ];
 
   return (
@@ -154,29 +161,26 @@ const About = () => {
         <StyledText>
           <div>
             <p>
-              Hello! My name is Nouman Rasheed and I am an AI and Software Engineer with a passion
-              for creating innovative solutions that leverage Cloud Computing, Data Engineering, and
-              DevOps. I specialize in designing and implementing complex backend systems and
-              developing advanced AI products.
+              Hello! I'm Nouman Rasheed, a passionate Deep Learning and Computer Vision Engineer dedicated to pushing the boundaries of artificial intelligence. 
+              With a strong foundation in computer science and a keen interest in cutting-edge technologies, I specialize in developing innovative AI solutions 
+              that address real-world challenges.
+            </p>
+            <p>
+              My expertise lies in creating and optimizing machine learning models, particularly in the realm of computer vision. I'm driven by the potential of 
+              AI to transform industries and improve everyday life. Whether it's enhancing safety systems, streamlining business processes, or creating 
+              intelligent applications, I'm always excited to explore new ways to apply AI technologies.
             </p>
 
             <p>
-              My professional journey has allowed me to work on a diverse range of projects,
-              including facial recognition systems, accident analysis through computer vision,
-              automated access systems, and crowd counting solutions. I thrive on solving complex
-              business problems and optimizing performance for large-scale distributed systems.
-            </p>
-
-            <p>
-              Currently, I am focused on building optimized AI solutions at{' '}
+              Currently, I'm leveraging my skills at{' '}
               <a href="https://deeritc.com/" target="_blank" rel="noreferrer">
                 DeerItc
               </a>
-              , where I continue to push the boundaries of technology to deliver impactful digital
-              experiences.
+              , where I continue to grow and contribute to groundbreaking AI initiatives. I'm passionate about staying at the forefront of technological 
+              advancements and enjoy the challenge of turning complex problems into elegant, efficient solutions.
             </p>
 
-            <p>Here are a few technologies I’ve been working with recently:</p>
+            <p>Here are a few key technologies I work with:</p>
           </div>
 
           <ul className="skills-list">

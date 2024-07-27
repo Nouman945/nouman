@@ -4,9 +4,10 @@ title: 'Weapon Detection using YOLO V3'
 github: 'https://github.com/Nouman945/Weapon-Detection-using-YOLO-V3'
 external: ''
 tech:
-  - React
-  - TypeScript
-  - Stats Perform API
+  - YoloV3
+  - LabelIMG
+  - OpenCV
+  - RTSP
 company: 'Upstatement'
 showInProjects: true
 ---

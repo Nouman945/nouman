@@ -1,9 +1,9 @@
 ---
 date: '2022-04-24'
-title: 'AI Computer Vision Engineer'
-company: 'Sigma Vendors'
-location: 'Islamabad, Pakistan'
-range: 'Feb 2022 - Dec 2022'
+title: 'Garbage Detection'
+company: 'Senior Project'
+location: 'Pakistan'
+range: 'March 2021 - August 2021'
 ---
 
 - Developed a mask detection and people counting system for an automated door entry solution, achieving 95% detection accuracy.

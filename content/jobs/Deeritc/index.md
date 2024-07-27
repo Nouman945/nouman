@@ -7,9 +7,10 @@ range: 'May 2022 - Present'
 url: 'https://deeritc.com'
 ---
 
-- Developed a Facial Recognition System with a face embedding database, achieving 97% recognition accuracy, and processing 20 real-time live streaming IP cameras, enhancing security measures by 60%.
-- Engineered a Forklift Detection System for accident analysis, resulting in a 93% detection accuracy and reducing workplace accidents by 90%, leading to a safer work environment.
-- Worked in Development of a Saudi license plate recognition system with 98% accuracy, automating access control for over 500 vehicles daily and improving operational efficiency by 40%.
+- Developed Forklift and Person detection system using MobileNet-v2 on Google Coral Edge TPU, implemented tiling for small object detection. Achieved 95% accuracy, resulting in 90% reduction in forklift- related accidents.
+- Trained YoloV8 for Person Detection on Nvidia H100 and DeepSort for realtime detection and tracking. Used the GStreamer for rtsp capture and deployed on Nvidia Jetson Orin.
+- Working with ­developing a high-performance Facial Recognition System using LFFD, FaceNet and Nvidia DeepStream, achieving 97% recognition accuracy across 20 concurrent real-time IP camera streams.
+- Worked on custom LPRNet for Saudi License Plate recognition using Tensorflow with 90% accuracy.
 - Led the design and implementation of a crowd counting and tracking solution, improving event safety protocols and retail analysis accuracy by 50%.
 - Architected scalable solutions for complex business challenges, optimizing performance of large-scale real-time and asynchronous applications by 70%.
 - Created and maintained React.js dashboards for real-time monitoring and analysis, increasing data visibility and decision-making speed by 30%.
