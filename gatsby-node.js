@@ -66,6 +66,23 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
   });
 };
 
+// Add this new export
+exports.createSchemaCustomization = ({ actions }) => {
+  const { createTypes } = actions;
+  const typeDefs = `
+    type MarkdownRemarkFrontmatter {
+      cta: String
+      # Add other fields that might be causing issues here
+      slug: String
+      date: Date
+      title: String
+      tags: [String]
+      # Add any other fields you're using in your frontmatter
+    }
+  `;
+  createTypes(typeDefs);
+};
+
 // https://www.gatsbyjs.org/docs/node-apis/#onCreateWebpackConfig
 exports.onCreateWebpackConfig = ({ stage, loaders, actions }) => {
   // https://www.gatsbyjs.org/docs/debugging-html-builds/#fixing-third-party-modules
