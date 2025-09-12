@@ -60,9 +60,11 @@ const Contact = () => {
       <h2 className="title">Get In Touch</h2>
 
       <p>
-        I'm always interested in connecting with fellow innovators in AI and technology. While engaged in exciting projects, 
-        I'm open to discussing new ideas and opportunities that align with my expertise. Whether it's about AI trends or potential collaborations, 
-        I welcome meaningful conversations that could lead to interesting ventures.
+        I'm always interested in connecting with fellow innovators in AI and technology. With 4+
+        years of experience in Computer Vision, LLM fine-tuning, and multimodal AI systems, I'm open
+        to discussing new ideas and opportunities that align with my expertise in NLP, Computer
+        Vision, and MLOps. Whether it's about cutting-edge AI research, production-grade
+        implementations, or potential collaborations, I welcome meaningful conversations.
       </p>
 
       <a className="email-link" href={`mailto:${email}`}>

@@ -61,24 +61,33 @@ const Hero = () => {
 
   const one = <h1>Hello, I'm</h1>;
   const two = <h2 className="big-heading">Nouman Rasheed</h2>;
-  const three = <h3 className="big-heading">Deep Learning & Computer Vision Engineer</h3>;
+  const three = <h3 className="big-heading">AI Developer and Researcher</h3>;
   const four = (
     <>
       <p>
-        I specialize in developing advanced AI solutions with a focus on deep learning and computer vision. My expertise lies in creating innovative systems 
-        that tackle complex challenges across various industries.
+        I'm an AI Developer and Researcher with <strong>4+ years</strong> of experience in Computer
+        Vision,
+        <strong> LLM fine-tuning</strong>, and multimodal AI systems. I specialize in delivering
+        impactful solutions in <strong>NLP, Computer Vision, and MLOps</strong>, with hands-on
+        expertise in deploying production-grade AI applications.
       </p>
       <p>
-        With a strong background in AI technologies and software engineering, I'm dedicated to pushing the boundaries of what's possible in AI. 
-        My approach combines cutting-edge research with practical implementation, ensuring solutions that are both innovative and effective.
+        My experience spans from developing advanced computer vision systems for security and safety
+        applications to building sophisticated chatbots with multilingual capabilities. I have a
+        proven track record in both academic and industrial <strong>R&D</strong>, including work in
+        fast-paced startup environments.
       </p>
       <p>
-        Currently, I'm applying my skills at{' '}
-        <a href="https://deeritc.com/" target="_blank" rel="noreferrer">
-        DeerItc
+        Currently, I'm working as an AI Lead Engineer at{' '}
+        <a href="https://primegate.net.sa/" target="_blank" rel="noreferrer">
+          PrimeGate
+        </a>{' '}
+        and as an AI Researcher/Tech Lead at{' '}
+        <a href="https://ink.ai" target="_blank" rel="noreferrer">
+          Ink AI
         </a>
-        , where I continue to explore new frontiers in AI. I'm always eager to discuss potential collaborations or share insights about the evolving 
-        landscape of artificial intelligence and its real-world applications.
+        . I'm passionate about transforming complex challenges into elegant, production-ready AI
+        solutions.
       </p>
     </>
   );
@@ -86,7 +95,7 @@ const Hero = () => {
   const five = (
     <a
       className="email-link"
-      href="mailto:muhmmadnouman945@gmail.com"
+      href="mailto:muhammadnouman945@gmail.com"
       target="_blank"
       rel="noreferrer">
       Get in Touch!
