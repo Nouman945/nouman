@@ -37,7 +37,7 @@ const StyledHeroSection = styled.section`
 
   p {
     margin: 20px 0 0;
-    max-width: 720px;
+    max-width: 1200px;
   }
 
   .email-link {

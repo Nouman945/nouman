@@ -5,12 +5,14 @@ import sr from '@utils/sr';
 import { usePrefersReducedMotion } from '@hooks';
 
 const StyledContactSection = styled.section`
-  max-width: 600px;
+  max-width: 1000px;
   margin: 0 auto 100px;
   text-align: center;
+  padding: 0 20px;
 
   @media (max-width: 768px) {
     margin: 0 auto 50px;
+    padding: 0 15px;
   }
 
   .overline {
@@ -33,11 +35,37 @@ const StyledContactSection = styled.section`
 
   .title {
     font-size: clamp(40px, 5vw, 60px);
+    margin-bottom: 30px;
+    color: var(--lightest-slate);
+    font-weight: 600;
+  }
+
+  p {
+    font-size: var(--fz-lg);
+    line-height: 1.6;
+    color: var(--slate);
+    margin-bottom: 0;
+    max-width: 600px;
+    margin: 0 auto 40px;
+
+    @media (max-width: 768px) {
+      font-size: var(--fz-md);
+    }
   }
 
   .email-link {
     ${({ theme }) => theme.mixins.bigButton};
     margin-top: 50px;
+    transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
+
+    &:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 10px 30px rgba(100, 255, 218, 0.3);
+    }
+
+    &:active {
+      transform: translateY(-1px);
+    }
   }
 `;
 

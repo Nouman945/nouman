@@ -2,13 +2,11 @@ import React, { useState, useEffect, useRef } from 'react';
 import { useStaticQuery, graphql } from 'gatsby';
 import { CSSTransition } from 'react-transition-group';
 import styled from 'styled-components';
-import { srConfig } from '@config';
 import { KEY_CODES } from '@utils';
-import sr from '@utils/sr';
 import { usePrefersReducedMotion } from '@hooks';
 
 const StyledJobsSection = styled.section`
-  max-width: 700px;
+  max-width: 1200px;
 
   .inner {
     display: flex;
@@ -19,7 +17,7 @@ const StyledJobsSection = styled.section`
 
     // Prevent container from jumping
     @media (min-width: 700px) {
-      min-height: 340px;
+      min-height: 400px;
     }
   }
 `;
@@ -72,21 +70,24 @@ const StyledTabButton = styled.button`
   align-items: center;
   width: 100%;
   height: var(--tab-height);
-  padding: 0 20px 2px;
+  padding: 0 25px 2px;
   border-left: 2px solid var(--lightest-navy);
   background-color: transparent;
   color: ${({ isActive }) => (isActive ? 'var(--green)' : 'var(--slate)')};
   font-family: var(--font-mono);
-  font-size: var(--fz-xs);
+  font-size: var(--fz-sm);
+  font-weight: ${({ isActive }) => (isActive ? '500' : '400')};
   text-align: left;
   white-space: nowrap;
+  transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
 
   @media (max-width: 768px) {
-    padding: 0 15px 2px;
+    padding: 0 20px 2px;
+    font-size: var(--fz-xs);
   }
   @media (max-width: 600px) {
     ${({ theme }) => theme.mixins.flexCenter};
-    min-width: 120px;
+    min-width: 130px;
     padding: 0 15px;
     border-left: 0;
     border-bottom: 2px solid var(--lightest-navy);
@@ -96,6 +97,7 @@ const StyledTabButton = styled.button`
   &:hover,
   &:focus {
     background-color: var(--light-navy);
+    color: var(--green);
   }
 `;
 
@@ -104,22 +106,24 @@ const StyledHighlight = styled.div`
   top: 0;
   left: 0;
   z-index: 10;
-  width: 2px;
+  width: 3px;
   height: var(--tab-height);
   border-radius: var(--border-radius);
-  background: var(--green);
+  background: linear-gradient(135deg, var(--green), var(--green-tint));
   transform: translateY(calc(${({ activeTabId }) => activeTabId} * var(--tab-height)));
-  transition: transform 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition: transform 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
   transition-delay: 0.1s;
+  box-shadow: 0 0 10px var(--green-tint);
 
   @media (max-width: 600px) {
     top: auto;
     bottom: 0;
     width: 100%;
     max-width: var(--tab-width);
-    height: 2px;
+    height: 3px;
     margin-left: 50px;
     transform: translateX(calc(${({ activeTabId }) => activeTabId} * var(--tab-width)));
+    box-shadow: 0 0 8px var(--green-tint);
   }
   @media (max-width: 480px) {
     margin-left: 25px;
@@ -129,7 +133,7 @@ const StyledHighlight = styled.div`
 const StyledTabPanels = styled.div`
   position: relative;
   width: 100%;
-  margin-left: 20px;
+  margin-left: 30px;
 
   @media (max-width: 600px) {
     margin-left: 0;
@@ -139,14 +143,32 @@ const StyledTabPanels = styled.div`
 const StyledTabPanel = styled.div`
   width: 100%;
   height: auto;
-  padding: 10px 5px;
+  padding: 20px 15px;
+  border-radius: var(--border-radius);
+  background-color: var(--light-navy-transparent, rgba(23, 42, 69, 0.3));
+  backdrop-filter: blur(10px);
+  border: 1px solid var(--lightest-navy);
+
+  @media (max-width: 768px) {
+    padding: 15px 10px;
+  }
 
   ul {
     ${({ theme }) => theme.mixins.fancyList};
+    margin-top: 20px;
+
+    li {
+      margin-bottom: 12px;
+      line-height: 1.5;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
   }
 
   h3 {
-    margin-bottom: 2px;
+    margin-bottom: 5px;
     font-size: var(--fz-xxl);
     font-weight: 500;
     line-height: 1.3;
@@ -156,11 +178,57 @@ const StyledTabPanel = styled.div`
     }
   }
 
+  .job-details {
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+
+    @media (min-width: 768px) {
+      flex-direction: row;
+      gap: 20px;
+      align-items: center;
+    }
+  }
+
   .range {
-    margin-bottom: 25px;
+    margin: 0;
     color: var(--light-slate);
     font-family: var(--font-mono);
+    font-size: var(--fz-sm);
+    font-weight: 400;
+
+    @media (max-width: 768px) {
+      font-size: var(--fz-xs);
+    }
+  }
+
+  .location {
+    margin: 0;
+    color: var(--slate);
+    font-family: var(--font-mono);
     font-size: var(--fz-xs);
+    font-weight: 400;
+    opacity: 0.8;
+
+    &:before {
+      content: '📍 ';
+      margin-right: 4px;
+    }
+  }
+
+  p {
+    margin-bottom: 15px;
+    line-height: 1.6;
+
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+  }
+
+  strong {
+    color: var(--green);
+    font-weight: 600;
   }
 `;
 
@@ -192,16 +260,13 @@ const Jobs = () => {
   const [activeTabId, setActiveTabId] = useState(0);
   const [tabFocus, setTabFocus] = useState(null);
   const tabs = useRef([]);
-  const revealContainer = useRef(null);
   const prefersReducedMotion = usePrefersReducedMotion();
 
   useEffect(() => {
     if (prefersReducedMotion) {
       return;
     }
-
-    sr.reveal(revealContainer.current, srConfig());
-  }, []);
+  }, [prefersReducedMotion]);
 
   const focusTab = () => {
     if (tabs.current[tabFocus]) {
@@ -243,8 +308,8 @@ const Jobs = () => {
   };
 
   return (
-    <StyledJobsSection id="jobs" ref={revealContainer}>
-      <h2 className="numbered-heading">Where I’ve Worked</h2>
+    <StyledJobsSection id="jobs">
+      <h2 className="numbered-heading">Where I've Worked</h2>
 
       <div className="inner">
         <StyledTabList role="tablist" aria-label="Job tabs" onKeyDown={e => onKeyDown(e)}>
@@ -294,7 +359,10 @@ const Jobs = () => {
                       </span>
                     </h3>
 
-                    <p className="range">{range}</p>
+                    <div className="job-details">
+                      <p className="range">{range}</p>
+                      {frontmatter.location && <p className="location">{frontmatter.location}</p>}
+                    </div>
 
                     <div dangerouslySetInnerHTML={{ __html: html }} />
                   </StyledTabPanel>

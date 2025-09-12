@@ -346,9 +346,9 @@ const Featured = () => {
   }, []);
 
   return (
-    <section id="projects">
+    <section id="projects" style={{ maxWidth: '1200px', margin: '0 auto' }}>
       <h2 className="numbered-heading" ref={revealTitle}>
-        Some Things I’ve Built
+        Some Things I've Built
       </h2>
 
       <StyledProjectsGrid>
