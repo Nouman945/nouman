@@ -5,10 +5,10 @@ module.exports = {
   siteMetadata: {
     title: 'Nouman Rasheed',
     description:
-      'Nouman Rasheed is a software engineer who specializes in building (and occasionally designing) exceptional digital experiences.',
+      'Nouman Rasheed is an AI Developer and Researcher with 4+ years of experience in Computer Vision, LLM fine-tuning, and multimodal AI systems.',
     siteUrl: 'https://nouman945.github.io', // No trailing slash allowed!
     image: '/og.png', // Path to your image you placed in the 'static' folder
-    twitterUsername: '@bchiang7',
+    twitterUsername: '@Nouman945',
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -151,9 +151,18 @@ module.exports = {
       },
     },
     {
-      resolve: `gatsby-plugin-google-analytics`,
+      resolve: `gatsby-plugin-google-gtag`,
       options: {
-        trackingId: 'UA-45666519-2',
+        trackingIds: ['UA-45666519-2'],
+        gtagConfig: {
+          anonymize_ip: true,
+          cookie_expires: 0,
+        },
+        pluginConfig: {
+          head: false,
+          respectDNT: true,
+          exclude: [],
+        },
       },
     },
   ],
