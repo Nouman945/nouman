@@ -1,5 +1,5 @@
 ---
-date: '2024-06-01'
+date: '2024-10-01'
 title: 'AI Researcher / Tech Lead'
 company: 'Ink AI'
 location: 'Delaware, USA'
