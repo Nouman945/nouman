@@ -126,31 +126,30 @@ const About = () => {
   }, []);
 
   const skills = [
-    "Deep Learning",
-    "Computer Vision",
-    "TensorFlow",
-    "PyTorch",
-    "Python",
-    "Machine Learning",
-    "Object Detection",
-    "Facial Recognition",
-    "YOLO",
-    "OpenCV",
-    "Keras",
-    "Edge Computing",
-    "Docker",
-    "Kubernetes",
-    "AWS",
-    "CI/CD",
-    "Git",
-    "Django",
-    "FastAPI",
-    "RESTful APIs",
-    "JavaScript",
-    "React",
-    "SQL",
-    "Data Analysis",
-    "Streamlit"
+    'Python',
+    'JavaScript',
+    'C++',
+    'Kotlin',
+    'TensorFlow',
+    'PyTorch',
+    'LLaMA Models',
+    'GPT Models',
+    'Computer Vision',
+    'Deep Learning',
+    'YOLOv8',
+    'OpenCV',
+    'LangChain',
+    'FastAPI',
+    'Django',
+    'React.js',
+    'Docker',
+    'AWS',
+    'ChromaDB',
+    'Neo4j',
+    'GraphRAG',
+    'ONNX Runtime',
+    'Edge Computing',
+    'MLOps',
   ];
 
   return (
@@ -161,23 +160,32 @@ const About = () => {
         <StyledText>
           <div>
             <p>
-              Hello! I'm Nouman Rasheed, a passionate Deep Learning and Computer Vision Engineer dedicated to pushing the boundaries of artificial intelligence. 
-              With a strong foundation in computer science and a keen interest in cutting-edge technologies, I specialize in developing innovative AI solutions 
-              that address real-world challenges.
+              Hello! I'm Nouman Rasheed, an AI Developer and Researcher with{' '}
+              <strong>4+ years</strong> of experience in Computer Vision,
+              <strong>LLM fine-tuning</strong>, and multimodal AI systems. I have a proven track
+              record in both academic and industrial
+              <strong>R&D</strong>, including work in fast-paced startup and challenging
+              environments.
             </p>
             <p>
-              My expertise lies in creating and optimizing machine learning models, particularly in the realm of computer vision. I'm driven by the potential of 
-              AI to transform industries and improve everyday life. Whether it's enhancing safety systems, streamlining business processes, or creating 
-              intelligent applications, I'm always excited to explore new ways to apply AI technologies.
+              I specialize in delivering impactful solutions in{' '}
+              <strong>NLP, Computer Vision, and MLOps</strong>, with hands-on expertise in deploying
+              production-grade AI applications. My experience spans from developing advanced
+              computer vision systems for security and safety applications to building sophisticated
+              chatbots with multilingual capabilities.
             </p>
 
             <p>
-              Currently, I'm leveraging my skills at{' '}
-              <a href="https://deeritc.com/" target="_blank" rel="noreferrer">
-                DeerItc
+              Currently, I'm working as an AI Lead Engineer at{' '}
+              <a href="https://primegate.net.sa/" target="_blank" rel="noreferrer">
+                PrimeGate
               </a>
-              , where I continue to grow and contribute to groundbreaking AI initiatives. I'm passionate about staying at the forefront of technological 
-              advancements and enjoy the challenge of turning complex problems into elegant, efficient solutions.
+              , while also serving as an AI Researcher/Tech Lead at{' '}
+              <a href="https://ink.ai" target="_blank" rel="noreferrer">
+                Ink AI
+              </a>
+              . I'm passionate about pushing the boundaries of AI technology and transforming
+              complex challenges into elegant, production-ready solutions.
             </p>
 
             <p>Here are a few key technologies I work with:</p>

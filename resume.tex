@@ -1,0 +1,364 @@
+%-------------------------
+% Resume in LaTeX
+% Author: Nouman Rasheed
+% Website: https://github.com/Nouman945
+% License: MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[pdftex]{hyperref}
+\usepackage{fancyhdr}
+\usepackage{fontawesome5} % For icons
+\usepackage{xcolor} % For colored text
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.375in}
+\addtolength{\evensidemargin}{-0.375in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING-----------------
+
+\begin{center}
+  % Name and job title
+  \textbf{\href{https://nouman-rasheed.com/}{\Large Nouman Rasheed}} {\color{darkgray} -- AI Developer and Researcher}
+  
+  \vspace{0.5em}
+  
+  % All contact information in one line
+  \faIcon{envelope} \ \href{mailto:muhammadnouman945@gmail.com}{muhammadnouman945@gmail.com} \hspace{0.7em}
+  \faIcon{phone} \ +966 58 3874348 \hspace{0.7em}
+  \faIcon{globe} \ \href{https://nouman-rasheed.com/}{nouman-rasheed.com} \hspace{0.7em}
+  \faIcon{github} \ \href{https://github.com/Nouman945}{Nouman945} \hspace{0.7em}
+  \faIcon{linkedin} \ \href{https://www.linkedin.com/in/nouman945/}{Nouman}
+\end{center}
+
+
+AI Developer and Researcher with \textbf{4+ years} of experience in Computer Vision, \textbf{LLM fine-tuning}, and multimodal AI systems. Proven track record in academic and industrial \textbf{R\&D}, including work in fast-paced startup and challenging environments. Experienced in delivering impactful solutions in \textbf{NLP, CV, and MLOps}, with hands-on expertise in deploying production-grade AI applications.
+
+
+%----------- PROFESSIONAL EXPERIENCE-----------------
+\section{\textbf{Professional Experience}}
+  \resumeSubHeadingListStart
+
+  \resumeSubheading
+    {\href{https://primegate.net.sa/}{\textbf{PrimeGate}}}{Riyadh, Saudi Arabia}
+    {AI Lead Engineer}{November 2024 -- Present}
+    \resumeItemListStart
+      \resumeItem{Access Control System}
+        {Led development of an access control platform integrating \textbf{face recognition}, \textbf{license plate recognition}, \textbf{person tracking}, and attribute-based person search (clothing color, age, gender).}
+      \resumeItem{Chatbot Development}
+        {Built an \textbf{on-premises multilingual chatbot} using fine-tuned \textbf{LLaMA-12B}, supporting both \textbf{Arabic and English}. Fine-tuned embedding models for Arabic semantic search and optimized enterprise knowledge integration.}
+      \resumeItem{Advanced Retrieval and Query Expansion}
+        {Implemented state-of-the-art retrieval techniques and query expansion features, deploying \textbf{multi-agents} for HR, IT, Finance, Labor, and Procurement departments.}
+      \resumeItem{AI for Safety and Compliance}
+        {Collaborated with \textbf{GOSI and Saudi Civil Defense} to design and develop \textbf{AI-powered video analytics} solutions for workplace safety and compliance monitoring.}
+      \resumeItem{Visitor Management System}
+        {Developed an internal visitor management tool leveraging AI-based face recognition for secure and seamless workplace access.}
+    \resumeItemListEnd
+
+    \resumeSubheading
+      {\href{https://ink.ai}{\textbf{Ink AI}}}{Delaware, USA}
+      {AI Researcher / Tech Lead}{June 2024 -- Present}
+    \resumeItemListStart
+      \resumeItem{Tech Lead: Backend, Frontend, and Research Leadership}
+        {Worked as a tech lead overseeing \textbf{end-to-end development}, including backend services, frontend (\textbf{Kotlin}) for \textbf{Android}, and guiding research efforts. Coordinated cross-functional collaboration to deliver \textbf{production-ready AI solutions}.}
+      \resumeItem{Digital Ink Recognition and Synthesis R\&D}
+        {Conducted research in \textbf{digital ink recognition} with focus on \textbf{handwriting generation} using reference and target text. Trained and evaluated custom models to mimic user handwriting.}
+      \resumeItem{Model Development and Accuracy Improvement}
+        {Designed and trained \textbf{RNN, LSTM-based, Transformer-based, and Diffusion-based models} on IAMonDB and Brush Online datasets. Achieved an accuracy improvement from \textbf{89\% to 93\%} in handwriting generation.}
+      \resumeItem{Cloud Deployment and Model Serving}
+        {Deployed trained models on \textbf{Google Cloud Platform (GCP)}, configured training pipelines, and exposed endpoints for inference. Integrated deployed services into both \textbf{web and Android applications} for seamless user interaction.}
+      \resumeItem{Semantic Similarity Search with Vector DBs}
+        {Built a notebook content search system using \textbf{ChromaDB} and \textbf{OpenAI LLMs} to enable context-aware retrieval through \textbf{embedding-based similarity}.}
+      \resumeItem{System Integration and Backend Engineering}
+        {Integrated model APIs using \textbf{FastAPI} and \textbf{RESTful interfaces}. Supported deployment and service integration with \textbf{ReactJS} frontend and \textbf{Kotlin-based} components.}
+      \resumeItem{MLOps and Infrastructure}
+        {Containerized services with \textbf{Docker} and utilized \textbf{PyTorch and TensorFlow} for training and serving models in \textbf{production}.}
+      \resumeItem{Startup Contribution}
+        {Worked closely with the startup founded by \textbf{Rich Miner (Co-founder of Android)}, contributing to R\&D and operations.}
+    \resumeItemListEnd
+
+  \resumeSubheading
+    {\href{https://deeritc.com/}{\textbf{DEER}}}{Dammam, Saudi Arabia}
+    {Senior AI Engineer}{May 2022 -- November 2024}
+    \resumeItemListStart
+      \resumeItem{Facial Recognition and Intruder Detection Pipeline}
+        {Developed and integrated \textbf{end-to-end pipelines} for \textbf{facial recognition} and face detection systems to support intruder detection. Optimized \textbf{real-time inference} and deployed solutions within existing security infrastructure.}
+      \resumeItem{Advanced Detection Systems}
+        {Developed forklift and person detection systems using \textbf{MobileNet-v2} on \textbf{Google Coral TPU} (\textbf{95\% accuracy}) and \textbf{YOLOv8 with DeepSort} for real-time tracking, deployed on \textbf{Nvidia Jetson Orin}.}
+      \resumeItem{High-Performance AI Solutions}
+        {Built facial recognition solutions (\textbf{97\% accuracy} with \textbf{LFFD, FaceNet, and DeepStream}) and Saudi license plate recognition (\textbf{LPRNet, 90\% accuracy}).}
+      \resumeItem{LLM Model}
+        {Created a \textbf{healthcare chatbot} (fine-tuned \textbf{LLaMA 3.1}) and implemented \textbf{GraphRAG} for document search using \textbf{Neo4j} and \textbf{LLaMA 3.2}.}
+      \resumeItem{Arabic Speech Recognition (Mulhem Project)}
+        {Contributed to the development of \textbf{Mulhem, the first Arabic ASR system}, by improving tokenizer accuracy to \textbf{78\%}.}
+    \resumeItemListEnd
+
+  \resumeSubheading
+    {{\href{https://www.ciena.com/}{\textbf{Ciena}}} (Contractor; in collaboration with Meta)}{Remote, Canada}
+    {Contract Computer Vision Engineer}{Sep 2024 -- Aug 2025}
+    \resumeItemListStart
+      \resumeItem{AI-Based Server Rack Scanning Platform}
+        {Built an end-to-end CV system to analyze network chassis images and detect chassis, cards, ports, and fiber anomalies; exposed as a Flask API with Redis-backed async batching and Basic Auth.}
+      \resumeItem{Multi-Model Inference Pipeline}
+        {Integrated Ultralytics YOLOv8 models for \textbf{chassis segmentation}, \textbf{multicard segmentation}, \textbf{port segmentation}, and \textbf{fiber kink/knot detection}, plus a \textbf{UNet ONNX} for fiber segmentation masks.}
+      \resumeItem{ONNX Acceleration and Quantization}
+        {Authored tooling to export \texttt{.pt} to ONNX and perform \textbf{dynamic/static INT8 quantization} via onnxruntime, reducing latency and memory while keeping a unified inference API.}
+      \resumeItem{Layout-Aware Port Mapping}
+        {Designed a JSON-driven, \textbf{layout-aware interpolation} algorithm to map detections to expected card port grids and synthesize missing ports, improving robustness under occlusion/low confidence.}
+      \resumeItem{Fiber Kink/Knot Analysis}
+        {Implemented detection and \textbf{bend-radius} estimation from centerlines; validated against ITU \textbf{G.652/G.657} standards and produced annotated overlays and structured outputs.}
+      \resumeItem{Batching and Best-of-3 Selection}
+        {Buffered 3 images per view (ports/fiber) with \textbf{best-frame selection} by detection counts; added a \textbf{top/center/bottom} batch workflow that merges data and per-stage images.}
+      \resumeItem{OCR for Labels}
+        {Integrated \textbf{Llama 3.2 Vision} via local API for shelf/fiber label OCR with image overlays and JSON responses.}
+      \resumeItem{APIs, Observability, and UX}
+        {Delivered authenticated endpoints with background threads and status polling, GPU/CPU memory hygiene, structured logging, and a lightweight HTML test tool for driving/visualizing API calls.}
+      \resumeItem{Tech Stack}
+        {\textbf{Python}, \textbf{PyTorch}, \textbf{Ultralytics YOLOv8}, \textbf{ONNX Runtime}, \textbf{OpenCV}, \textbf{Flask}, \textbf{Redis}, NumPy, Matplotlib, SAHI (optional), CUDA.}
+    \resumeItemListEnd
+
+  \resumeSubheading
+    {Sigma Vendors}{Lahore, Pakistan}
+    {Computer Vision Engineer}{Sep 2021 -- Apr 2022}
+    \resumeItemListStart
+      \resumeItem{Edge-Based Door Entry System}
+        {Implemented a \textbf{Raspberry Pi 3} powered door entry system for healthcare security using \textbf{Tiny YOLOv5}, enabling \textbf{real-time edge inference}.}
+      \resumeItem{Mask Detection and People Counting}
+        {Developed a mask detection and people counting system, achieving \textbf{95\% detection accuracy}.}
+      \resumeItem{Data Visualization and Workflows}
+        {Built interactive dashboards with \textbf{Streamlit} and designed custom workflows for streamlined data ingestion and processing.}
+    \resumeItemListEnd
+
+%-----------PROJECTS-----------------
+\section{\textbf{Projects}}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Business Intelligence Dashboard}{}
+      {Python, Django, REST API, Docker, ReactJS, MySQL}{}
+      \resumeItemListStart
+        \resumeItem{ETL Pipelines and Data Integration}
+          {Built business intelligence dashboard and ETL pipelines for ingesting data from Excel, CSV, and DOC files.}
+        \resumeItem{Forecasting and Prescriptive Analysis}
+          {Forecasted sales KPIs using ARIMA and utilized Gemini Pro API for prescriptive analysis to provide actionable recommendations.}
+        \resumeItem{Interactive Dashboards}
+          {Developed dashboards with API integration and rich data visualizations to support informed business decision-making.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Crypto Analyzer (SkyTrading)}{}
+      {Python, Django, API, ReactJS, Docker, MySQL}{}
+      \resumeItemListStart
+        \resumeItem{Trading Data Pipelines}
+          {Implemented ETL pipelines for data ingestion and created visualizations to analyze trading history.}
+        \resumeItem{REST API and Dashboard}
+          {Developed REST APIs in Django with a ReactJS dashboard for trading data analysis and forecasting.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {RealEstate Property Estimator AI}{}
+      {Python, Streamlit, TensorFlow, Pandas, Docker, AWS}{}
+      \resumeItemListStart
+        \resumeItem{AI-Powered Cost Prediction}
+          {Developed a Streamlit-based AI application to predict construction costs, enabling accurate real estate investment analysis.}
+        \resumeItem{Geospatial Analysis}
+          {Integrated Folium maps for dynamic location selection, proximity scoring, and travel time analysis.}
+        \resumeItem{ROI and Investment Insights}
+          {Implemented customizable amenity preferences for ROI calculations and visualization of nearby services to assist property investors.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+
+%----------- RESEARCH EXPERIENCE-----------------
+\section{\textbf{Research Experience}}
+  \resumeSubHeadingListStart
+
+  \resumeSubheading
+    {University of Kotli (AJK)}{Kotli (AJK), Pakistan}
+    {Undergraduate Researcher $|$ Supervisor: Dr. Zahid Mehmood, Ph.D}{Mar 2021 -- Oct 2021}
+    \resumeItemListStart
+      \resumeItem{Intelligent Waste Management System}
+        {Developed a custom-trained Mask R-CNN model for detecting garbage in open areas and dustbins, achieving \textbf{94.34\% accuracy} for each waste class, enhancing environmental monitoring capabilities.}
+      \resumeItem{Dataset Creation and Labeling}
+        {Created and meticulously labeled a custom dataset of approximately \textbf{500 images} across \textbf{3 waste classes}, establishing the foundation for accurate model training and validation.}
+      \resumeItem{Volume Measurement Techniques}
+        {Implemented advanced computer vision algorithms for garbage volume measurement, enabling \textbf{precise segmentation} of waste areas to optimize collection schedules and resource allocation.}
+      \resumeItem{Web Application Development}
+        {Deployed the trained model using \textbf{Django} framework and \textbf{REST APIs}, ensuring a robust and scalable application for real-time waste monitoring and management.}
+    \resumeItemListEnd
+
+
+  \resumeSubHeadingListEnd
+
+
+%-----------EDUCATION-----------------
+
+\section{\textbf{Education}}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {University of Kotli (AJK)}{Kotli, Pakistan}
+      {Bachelor of Science in Computer Science \textbar{} CGPA: 3.64/4.00}{Oct. 2017 -- Nov. 2021}
+  \resumeSubHeadingListEnd
+
+
+%--------PROGRAMMING SKILLS------------
+\section{\textbf{Skills and Interests}}
+\resumeSubHeadingListStart
+
+\item{
+\textbf{Languages:} Python, JavaScript, C++, Kotlin
+}
+
+\item{
+\textbf{Technologies and Tools:} 
+Pandas, NumPy, Matplotlib, Seaborn, OpenCV, PySpark, Statistical Analysis, Time Series Modeling, Big Data Analytics
+}
+
+\item{
+\textbf{Machine Learning and AI:} 
+GPT-based Models, LLaMA, Qwen, Model Fine-tuning and Optimization, Multimodal AI (LLaMA 3.2 Vision, Qwen), TensorFlow, PyTorch, Keras, Hugging Face, LangChain, LlamaIndex, GraphRAG
+}
+
+\item{
+\textbf{Backend Development:} 
+REST APIs, FastAPI, Flask, Django, Node.js (Express.js, Mongoose)
+}
+
+\item{
+\textbf{DevOps and Cloud:} 
+AWS (S3, Lambda, SageMaker, AWS Wrangler), Docker
+}
+
+\item{
+\textbf{Vector Databases:} 
+Chroma, Qdrant, Pinecone, FAISS
+}
+
+\item{
+\textbf{Graph Databases:} 
+Neo4j
+}
+\resumeSubHeadingListEnd
+
+
+
+%-----------CERTIFICATIONS-----------------
+
+% Define a new command for certification items with reduced spacing and bold text
+\newcommand{\certItem}[2]{
+  \item \textbf{#1 \hfill #2} \vspace{-0.05em} % Reduce space between items
+}
+
+\section{\textbf{Certifications}}
+\begin{itemize}[leftmargin=*,itemsep=-0.3em] % Reduce overall list spacing
+  \certItem{Neural Networks and Deep Learning $|$ DeepLearning.AI}{Jul 2024}
+  \certItem{Build Basic Generative Adversarial Networks (GANs) $|$ DeepLearning.AI}{Jan 2024}
+  \certItem{Introduction to TensorFlow for AI, ML, and Deep Learning $|$ DeepLearning.AI}{Sep 2023}
+  \certItem{What is Data Science? $|$ Coursera}{Jul 2023}
+  \certItem{Ethics in the Age of Generative AI $|$ LinkedIn}{Jul 2023}
+  \certItem{Ask Questions to Make Data-Driven Decisions $|$ Google}{Jan 2023}
+  \certItem{Data Manipulation with Pandas $|$ DataCamp}{Dec 2022}
+  \certItem{Foundations: Data, Data, Everywhere $|$ Google}{Dec 2022}
+  \certItem{Intermediate Python $|$ DataCamp}{Dec 2022}
+  \certItem{Introduction to Programming Using Python $|$ DataCamp}{Dec 2022}
+  \certItem{Data Visualization $|$ Kaggle}{Apr 2022}
+  \certItem{Intermediate Machine Learning $|$ Kaggle}{Mar 2021}
+  \certItem{Intro to Machine Learning $|$ Kaggle}{Mar 2021}
+  \certItem{Machine Learning $|$ Stanford University}{Mar 2021}
+  \certItem{Microsoft Technology Associate: Introduction to Programming Using Python}{Jan 2021}
+\end{itemize}
+
+%-----------EXTRACURRICULAR ACTIVITIES-----------------
+\section{\textbf{Extracurricular Activities}}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {CENTAIC -- National Aerospace and Technology Park (NASTP)}{June 2023 -- Aug 2023}
+      {AI Education Lead, Mentorship Program}{Rawalpindi, Pakistan}
+      \resumeItemListStart
+        \resumeItem{Technical Instruction}
+          {Developed and delivered comprehensive 3-month curriculum on Machine Learning and Deep Learning fundamentals to a cohort of interns, covering both theoretical foundations and practical implementations.}
+        \resumeItem{Mathematical Foundations}
+          {Guided students through essential mathematical concepts underpinning ML/DL algorithms, including linear algebra, calculus, probability theory, and statistical methods.}
+        \resumeItem{Hands-on Programming}
+          {Facilitated intensive PyTorch workshops, enabling participants to implement neural networks from scratch and deploy working AI solutions.}
+        \resumeItem{Knowledge Transfer}
+          {Bridged theoretical knowledge with practical applications, empowering the next generation of AI practitioners within Pakistan's developing aerospace technology sector.}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+
+
+
+%-----------ACHIEVEMENTS & AWARDS-----------------
+\section{\textbf{Achievements \& Awards}}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Industrial Exhibition (MUST)}{2021}
+      {Control Automotive and Robotics Lab}{Participation Shield}
+      \resumeItemListStart
+        \resumeItem{Recognition}
+          {Honored as the \textbf{first} student team from University of Kotli (AJK) to present our Intelligent Waste Management System at this prestigious event, receiving a participation shield for demonstrating innovative application of computer vision techniques.}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+\end{document}

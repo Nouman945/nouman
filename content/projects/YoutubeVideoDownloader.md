@@ -1,15 +1,16 @@
 ---
-date: '2021-03-27'
-title: 'Youtube Video Downloader in Django and Bootstrap'
-github: 'https://github.com/Nouman945/Youtube-Downloader'
+date: '2021-12-28'
+title: 'Youtube Video Downloader Desktop APP'
+github: 'https://github.com/Nouman945/Youtube-Video-Downloader-Desktop-APP'
 external: ''
 tech:
-  - Flask
-  - Bootstrap
-  - CodePen
-  - Youtube API
-company: 'Upstatement'
+  - Python
+  - Youtube-dl
+  - Tkinter
+  - GUI
+  - Desktop Application
+company: ''
 showInProjects: true
 ---
 
-Building a custom multisite compatible WordPress plugin to build global search with Algolia
+Built a user-friendly desktop application for downloading YouTube videos using Python and Tkinter. Implemented youtube-dl integration for high-quality video downloads with multiple format options. Created intuitive GUI interface with progress tracking and batch download capabilities.

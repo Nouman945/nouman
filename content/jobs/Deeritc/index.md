@@ -1,16 +1,15 @@
 ---
-date: '2022-05-12'
-title: 'Machine Learning | Backend Dev | DevOps | Engineer'
-company: 'DeerITC'
-location: 'Al Khobar, KSA'
-range: 'May 2022 - Present'
-url: 'https://deeritc.com'
+date: '2022-05-01'
+title: 'Senior AI Engineer'
+company: 'DEER'
+location: 'Dammam, Saudi Arabia'
+range: 'May 2022 - November 2024'
+url: 'https://deeritc.com/'
 ---
 
-- Developed Forklift and Person detection system using MobileNet-v2 on Google Coral Edge TPU, implemented tiling for small object detection. Achieved 95% accuracy, resulting in 90% reduction in forklift- related accidents.
-- Trained YoloV8 for Person Detection on Nvidia H100 and DeepSort for realtime detection and tracking. Used the GStreamer for rtsp capture and deployed on Nvidia Jetson Orin.
-- Working with ­developing a high-performance Facial Recognition System using LFFD, FaceNet and Nvidia DeepStream, achieving 97% recognition accuracy across 20 concurrent real-time IP camera streams.
-- Worked on custom LPRNet for Saudi License Plate recognition using Tensorflow with 90% accuracy.
-- Led the design and implementation of a crowd counting and tracking solution, improving event safety protocols and retail analysis accuracy by 50%.
-- Architected scalable solutions for complex business challenges, optimizing performance of large-scale real-time and asynchronous applications by 70%.
-- Created and maintained React.js dashboards for real-time monitoring and analysis, increasing data visibility and decision-making speed by 30%.
+- Developed and integrated **end-to-end pipelines** for **facial recognition** and face detection systems to support intruder detection. Optimized **real-time inference** and deployed solutions within existing security infrastructure.
+- Developed forklift and person detection systems using **MobileNet-v2** on **Google Coral TPU** (**95% accuracy**) and **YOLOv8 with DeepSort** for real-time tracking, deployed on **Nvidia Jetson Orin**.
+- Built facial recognition solutions (**97% accuracy** with **LFFD, FaceNet, and DeepStream**) and Saudi license plate recognition (**LPRNet, 90% accuracy**).
+- Created a **healthcare chatbot** (fine-tuned **LLaMA 3.1**) and implemented **GraphRAG** for document search using **Neo4j** and **LLaMA 3.2**.
+- Contributed to the development of **Mulhem, the first Arabic ASR system**, by improving tokenizer accuracy to **78%**.
+- Led the design and implementation of crowd counting and tracking solutions, improving event safety protocols and retail analysis accuracy.

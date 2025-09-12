@@ -8,6 +8,10 @@ tech:
   - LabelIMG
   - OpenCV
   - RTSP
-company: 'Upstatement'
+  - Computer Vision
+  - Real-time Detection
+company: ''
 showInProjects: true
 ---
+
+Developed an advanced weapon detection system using YOLOv3 for real-time security monitoring. Implemented custom object detection pipeline with OpenCV for RTSP stream processing. Created robust detection system for security applications with high accuracy and real-time performance.
