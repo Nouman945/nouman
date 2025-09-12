@@ -1,7 +1,7 @@
 const config = require('./src/config');
 
 module.exports = {
-  pathPrefix: '/nouman',
+  // pathPrefix: '/nouman', // Removed for root domain deployment
   siteMetadata: {
     title: 'Nouman Rasheed',
     description:
