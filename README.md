@@ -1,37 +1,56 @@
 <div align="center">
-  <img alt="Logo" src="https://raw.githubusercontent.com/bchiang7/v4/main/src/images/logo.png" width="100" />
+  <img alt="Logo" src="https://raw.githubusercontent.com/Nouman945/nouman/master/src/images/logo.png" width="100" />
 </div>
 <h1 align="center">
-  brittanychiang.com - v4
+  nouman-rasheed.com
 </h1>
 <p align="center">
-  The fourth iteration of <a href="https://brittanychiang.com" target="_blank">brittanychiang.com</a> built with <a href="https://www.gatsbyjs.org/" target="_blank">Gatsby</a> and hosted with <a href="https://www.netlify.com/" target="_blank">Netlify</a>
+  Personal portfolio website of <a href="https://nouman-rasheed.com" target="_blank">Nouman Rasheed</a>, AI Developer and Researcher, built with <a href="https://www.gatsbyjs.org/" target="_blank">Gatsby</a> and hosted with <a href="https://www.netlify.com/" target="_blank">Netlify</a>
 </p>
 <p align="center">
-  Previous iterations:
-  <a href="https://github.com/bchiang7/v1" target="_blank">v1</a>,
-  <a href="https://github.com/bchiang7/v2" target="_blank">v2</a>,
-  <a href="https://github.com/bchiang7/bchiang7.github.io" target="_blank">v3</a>
-</p>
-<p align="center">
-  <a href="https://app.netlify.com/sites/brittanychiang/deploys" target="_blank">
-    <img src="https://api.netlify.com/api/v1/badges/1963b488-7b78-48c9-9e2d-6fb5e47ab3af/deploy-status" alt="Netlify Status" />
-  </a>
+  Showcasing 4+ years of experience in Computer Vision, LLM fine-tuning, and multimodal AI systems
 </p>
 
-![demo](https://raw.githubusercontent.com/bchiang7/v4/main/src/images/demo.png)
+![demo](https://raw.githubusercontent.com/Nouman945/nouman/master/src/images/demo.png)
 
-## 🚨 Forking this repo (please read!)
+## 🚨 About This Project
 
-Many people have contacted me asking me if they can use this code for their own website, and the answer to that question is usually **yes, with attribution**.
+This portfolio website showcases my journey as an AI Developer and Researcher with 4+ years of experience in Computer Vision, LLM fine-tuning, and multimodal AI systems. Built with modern web technologies to highlight my professional experience, projects, and technical expertise.
 
-I value keeping my site open source, but as you all know, _**plagiarism is bad**_. It's always disheartening whenever I find that someone has copied my site without giving me credit. I spent a non-trivial amount of effort building and designing this iteration of my website, and I am proud of it! All I ask of you all is to not claim this effort as your own.
+### 🛠 Tech Stack
 
-Please also note that I did not build this site with the intention of it being a starter theme, so if you have questions about implementation, please refer to the [Gatsby docs](https://www.gatsbyjs.org/docs/).
+- **Frontend:** Gatsby (React), Styled Components
+- **Animation:** CSS3, GSAP
+- **Deployment:** Netlify
+- **Analytics:** Google Analytics
 
-### TL;DR
+### 📄 Attribution
 
-Yes, you can fork this repo. Please give me proper credit by linking back to [brittanychiang.com](https://brittanychiang.com). Thanks!
+This website is based on the excellent design by [Brittany Chiang](https://brittanychiang.com). The original template has been significantly customized to reflect my personal brand and professional experience in AI development.
+
+## ✨ Features
+
+- **Professional Experience:** Detailed overview of positions at PrimeGate, Ink AI, Ciena, DEER, and more
+- **AI Projects Portfolio:** Showcasing Computer Vision, NLP, and Machine Learning projects
+- **Technical Skills:** Comprehensive list of AI/ML technologies, frameworks, and tools
+- **Research Background:** Academic research in Computer Vision and AI applications
+- **Responsive Design:** Optimized for all devices and screen sizes
+- **Dark Theme:** Clean, professional dark mode interface
+
+## 🎯 Key Sections
+
+- **About:** AI Developer and Researcher with 4+ years of experience
+- **Experience:** Professional roles at leading tech companies and startups
+- **Projects:** Business Intelligence Dashboard, Crypto Analyzer, Real Estate AI, and more
+- **Contact:** Get in touch for collaboration opportunities
+
+## 📫 Contact
+
+- **Email:** [muhammadnouman945@gmail.com](mailto:muhammadnouman945@gmail.com)
+- **Website:** [nouman-rasheed.com](https://nouman-rasheed.com)
+- **LinkedIn:** [linkedin.com/in/nouman945](https://www.linkedin.com/in/nouman945/)
+- **GitHub:** [github.com/Nouman945](https://github.com/Nouman945)
+- **Twitter:** [@Nouman945](https://x.com/Nouman945)
 
 ## 🛠 Installation & Set Up
 
