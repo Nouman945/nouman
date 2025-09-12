@@ -46,7 +46,7 @@ This website is based on the excellent design by [Brittany Chiang](https://britt
 
 ## 📫 Contact
 
-- **Email:** [muhammadnouman945@gmail.com](mailto:muhammadnouman945@gmail.com)
+- **Email:** [muhmmadnouman945@gmail.com](mailto:muhmmadnouman945@gmail.com)
 - **Website:** [nouman-rasheed.com](https://nouman-rasheed.com)
 - **LinkedIn:** [linkedin.com/in/nouman945](https://www.linkedin.com/in/nouman945/)
 - **GitHub:** [github.com/Nouman945](https://github.com/Nouman945)
