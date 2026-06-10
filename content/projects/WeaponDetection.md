@@ -8,9 +8,9 @@ tech:
   - LabelIMG
   - OpenCV
   - RTSP
-  - Computer Vision
   - Real-time Detection
 company: ''
+category: 'Computer Vision'
 showInProjects: true
 ---
 

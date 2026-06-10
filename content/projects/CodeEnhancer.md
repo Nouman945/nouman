@@ -10,6 +10,7 @@ tech:
   - Stripe
   - CI/CD
 company: ''
+category: 'Generative AI'
 showInProjects: true
 ---
 

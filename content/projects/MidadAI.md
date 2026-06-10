@@ -11,6 +11,7 @@ tech:
   - Supabase
   - Inngest
 company: ''
+category: 'Generative AI'
 showInProjects: true
 ---
 

@@ -10,6 +10,7 @@ tech:
   - OpenAI API
   - Azure
 company: ''
+category: 'Web & Tools'
 showInProjects: true
 ---
 

@@ -13,6 +13,7 @@ tech:
   - ARIMA
   - Gemini Pro API
 company: ''
+category: 'Data & Analytics'
 showInProjects: true
 ---
 

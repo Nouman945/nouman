@@ -79,6 +79,7 @@ exports.createSchemaCustomization = ({ actions }) => {
       tags: [String]
       ios: String
       android: String
+      category: String
       # Add any other fields you're using in your frontmatter
     }
   `;

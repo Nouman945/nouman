@@ -12,6 +12,7 @@ tech:
   - MySQL
   - Trading Analytics
 company: ''
+category: 'Data & Analytics'
 showInProjects: true
 ---
 

@@ -6,10 +6,10 @@ external: ''
 tech:
   - Python
   - OpenCV
-  - Computer Vision
   - Game Automation
   - Image Processing
 company: ''
+category: 'Computer Vision'
 showInProjects: true
 ---
 

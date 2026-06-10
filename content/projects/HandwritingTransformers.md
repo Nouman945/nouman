@@ -9,6 +9,7 @@ tech:
   - MDN
   - Style Transfer
 company: ''
+category: 'Generative AI'
 showInProjects: true
 ---
 

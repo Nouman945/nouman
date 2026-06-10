@@ -10,6 +10,7 @@ tech:
   - MediaPipe
   - Azure
 company: ''
+category: 'Web & Tools'
 showInProjects: true
 ---
 

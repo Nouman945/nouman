@@ -10,6 +10,7 @@ tech:
   - GUI
   - Desktop Application
 company: ''
+category: 'Web & Tools'
 showInProjects: true
 ---
 

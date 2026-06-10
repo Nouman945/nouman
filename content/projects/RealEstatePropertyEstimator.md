@@ -13,6 +13,7 @@ tech:
   - Folium
   - Geospatial Analysis
 company: ''
+category: 'Data & Analytics'
 showInProjects: true
 ---
 
