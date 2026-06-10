@@ -1,6 +1,6 @@
 ---
 date: '2021-12-28'
-title: 'Youtube Video Downloader Desktop APP'
+title: 'YouTube Video Downloader Desktop App'
 github: 'https://github.com/Nouman945/Youtube-Video-Downloader-Desktop-APP'
 external: ''
 tech:

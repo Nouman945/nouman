@@ -5,7 +5,7 @@ module.exports = {
   siteMetadata: {
     title: 'Nouman Rasheed',
     description:
-      'Nouman Rasheed is an AI Developer and Researcher with 4+ years of experience in Computer Vision, LLM fine-tuning, and multimodal AI systems.',
+      'Nouman Rasheed is a Senior AI Engineer with 4+ years of experience building production Generative AI systems: multi-agent LLM platforms, enterprise RAG, and custom generative models, with a strong Computer Vision background.',
     siteUrl: 'https://nouman945.github.io', // No trailing slash allowed!
     image: '/og.png', // Path to your image you placed in the 'static' folder
     twitterUsername: '@Nouman945',

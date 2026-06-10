@@ -1,12 +1,12 @@
 ---
 date: '2'
-title: 'Code Enhancer'
+title: 'Code Enhancer - AI Code Refactoring Platform'
 cover: './halcyon.jpg'
 github: ''
-external: '#'
+external: ''
 tech:
   - Django
-  - NextJs
+  - Next.js
   - OpenAI API
   - CI/CD
   - WebHooks

@@ -127,28 +127,28 @@ const About = () => {
 
   const skills = [
     'Python',
-    'JavaScript',
-    'C++',
     'Kotlin',
-    'TensorFlow',
     'PyTorch',
-    'LLaMA Models',
-    'GPT Models',
+    'Claude / GPT / Gemini',
+    'LLaMA (QLoRA)',
+    'LangGraph Agents',
+    'RAG / GraphRAG',
+    'Text-to-SQL',
+    'Prompt Engineering & Evals',
+    'Qdrant / PGVector / FAISS',
+    'Generative Models',
+    'Transformers',
     'Computer Vision',
-    'Deep Learning',
     'YOLOv8',
-    'OpenCV',
-    'LangChain',
-    'FastAPI',
-    'Django',
-    'React.js',
-    'Docker',
-    'AWS',
-    'ChromaDB',
-    'Neo4j',
-    'GraphRAG',
     'ONNX Runtime',
+    'FastAPI',
+    'gRPC',
+    'Docker',
+    'Terraform',
+    'GCP',
+    'AWS',
     'Edge Computing',
+    'Weights & Biases',
     'MLOps',
   ];
 
@@ -160,32 +160,30 @@ const About = () => {
         <StyledText>
           <div>
             <p>
-              Hello! I'm Nouman Rasheed, an AI Developer and Researcher with{' '}
-              <strong>4+ years</strong> of experience in Computer Vision,
-              <strong>LLM fine-tuning</strong>, and multimodal AI systems. I have a proven track
-              record in both academic and industrial
-              <strong>R&D</strong>, including work in fast-paced startup and challenging
-              environments.
+              Hello! I'm Nouman Rasheed, a Senior AI Engineer with <strong>4+ years</strong> of
+              experience building production <strong>Generative AI</strong> systems: multi-agent LLM
+              platforms, enterprise <strong>RAG</strong>, and custom generative models trained from
+              scratch.
             </p>
             <p>
-              I specialize in delivering impactful solutions in{' '}
-              <strong>NLP, Computer Vision, and MLOps</strong>, with hands-on expertise in deploying
-              production-grade AI applications. My experience spans from developing advanced
-              computer vision systems for security and safety applications to building sophisticated
-              chatbots with multilingual capabilities.
-            </p>
-
-            <p>
-              Currently, I'm working as an AI Lead Engineer at{' '}
+              As a Founding AI Engineer at{' '}
+              <a href="https://ink.ai" target="_blank" rel="noreferrer">
+                Ink AI
+              </a>{' '}
+              (founded by Rich Miner, co-founder of Android), I design and train{' '}
+              <strong>handwriting synthesis transformers</strong> and ship LLM features end to end.
+              As AI Lead Engineer at{' '}
               <a href="https://primegate.net.sa/" target="_blank" rel="noreferrer">
                 PrimeGate
               </a>
-              , while also serving as an AI Researcher/Tech Lead at{' '}
-              <a href="https://ink.ai" target="_blank" rel="noreferrer">
-                Ink AI
-              </a>
-              . I'm passionate about pushing the boundaries of AI technology and transforming
-              complex challenges into elegant, production-ready solutions.
+              , I architect <strong>multi-agent platforms</strong> with LangGraph and Claude,
+              bilingual Arabic/English RAG, and Text-to-SQL systems for the enterprise.
+            </p>
+
+            <p>
+              Before going deep on GenAI, I spent years shipping <strong>Computer Vision</strong>{' '}
+              systems: face recognition, real-time tracking, and Edge AI on Jetson and Coral TPU for
+              industrial safety and security.
             </p>
 
             <p>Here are a few key technologies I work with:</p>

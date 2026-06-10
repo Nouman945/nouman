@@ -1,6 +1,6 @@
 ---
 date: '2021-12-28'
-title: 'Piano Tiles Bot with Python'
+title: 'Piano Tiles Bot with Python and OpenCV'
 github: 'https://github.com/Nouman945/Piano-tiles-bot-with-Python'
 external: ''
 tech:

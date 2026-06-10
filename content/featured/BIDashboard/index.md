@@ -1,12 +1,12 @@
 ---
 date: '1'
-title: 'BI Dashboard'
+title: 'Business Intelligence Dashboard'
 cover: './halcyon.jpg'
 github: ''
 external: ''
 tech:
   - Django
-  - ReactJS
+  - React.js
   - Gemini Pro API
   - PostgreSQL
   - Vercel
@@ -14,4 +14,4 @@ tech:
   - Git
 ---
 
-A Business Intelligence Software Solution built using Gemini API, Django backend, and ReactJs frontend, enhances decision-making with intuitive data visualization, advanced AI-driven time series prediction, and predictive and prescriptive analytics.
+A Business Intelligence Software Solution built using Gemini API, Django backend, and React.js frontend, enhances decision-making with intuitive data visualization, advanced AI-driven time series prediction, and predictive and prescriptive analytics.

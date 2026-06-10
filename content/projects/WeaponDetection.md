@@ -1,10 +1,10 @@
 ---
 date: '2021-07-01'
-title: 'Weapon Detection using YOLO V3'
+title: 'Real-Time Weapon Detection with YOLOv3'
 github: 'https://github.com/Nouman945/Weapon-Detection-using-YOLO-V3'
 external: ''
 tech:
-  - YoloV3
+  - YOLOv3
   - LabelIMG
   - OpenCV
   - RTSP

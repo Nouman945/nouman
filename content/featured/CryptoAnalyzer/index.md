@@ -1,10 +1,10 @@
 ---
 date: '3'
-title: 'Trading History Analyzer'
+title: 'SkyTrading - Trading History Analyzer'
 cover: './course-card.jpg'
 tech:
   - React
-  - Django RestAPI
+  - Django REST API
   - Data Visualization
   - OpenAI API
   - PostgreSQL

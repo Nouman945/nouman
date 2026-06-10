@@ -89,10 +89,10 @@ const Contact = () => {
 
       <p>
         I'm always interested in connecting with fellow innovators in AI and technology. With 4+
-        years of experience in Computer Vision, LLM fine-tuning, and multimodal AI systems, I'm open
-        to discussing new ideas and opportunities that align with my expertise in NLP, Computer
-        Vision, and MLOps. Whether it's about cutting-edge AI research, production-grade
-        implementations, or potential collaborations, I welcome meaningful conversations.
+        years of experience building production Generative AI systems, multi-agent LLM platforms,
+        and Computer Vision solutions, I'm open to discussing new ideas and opportunities. Whether
+        it's about cutting-edge AI research, production-grade implementations, or potential
+        collaborations, I welcome meaningful conversations.
       </p>
 
       <a className="email-link" href={`mailto:${email}`}>

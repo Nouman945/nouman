@@ -61,30 +61,28 @@ const Hero = () => {
 
   const one = <h1>Hello, I'm</h1>;
   const two = <h2 className="big-heading">Nouman Rasheed</h2>;
-  const three = <h3 className="big-heading">AI Developer and Researcher</h3>;
+  const three = <h3 className="big-heading">Senior AI Engineer - Generative AI</h3>;
   const four = (
     <>
       <p>
-        I'm an AI Developer and Researcher with <strong>4+ years</strong> of experience in Computer
-        Vision,
-        <strong> LLM fine-tuning</strong>, and multimodal AI systems. I specialize in delivering
-        impactful solutions in <strong>NLP, Computer Vision, and MLOps</strong>, with hands-on
-        expertise in deploying production-grade AI applications.
+        I'm a Senior AI Engineer with <strong>4+ years</strong> of experience building production{' '}
+        <strong>Generative AI</strong> systems: multi-agent LLM platforms (
+        <strong>LangGraph, Claude, GPT, Gemini</strong>), enterprise <strong>RAG</strong>, and
+        custom generative models for handwriting synthesis trained from scratch.
       </p>
       <p>
-        My experience spans from developing advanced computer vision systems for security and safety
-        applications to building sophisticated chatbots with multilingual capabilities. I have a
-        proven track record in both academic and industrial <strong>R&D</strong>, including work in
-        fast-paced startup environments.
+        My experience spans founding-engineer work at an American AI startup, enterprise GenAI
+        implementations in Saudi Arabia, and a strong <strong>Computer Vision</strong> and Edge AI
+        background spanning real-time systems on Jetson and Coral TPU.
       </p>
       <p>
-        Currently, I'm working as an AI Lead Engineer at{' '}
-        <a href="https://primegate.net.sa/" target="_blank" rel="noreferrer">
-          PrimeGate
-        </a>{' '}
-        and as an AI Researcher/Tech Lead at{' '}
+        Currently, I'm working as a Founding AI Engineer at{' '}
         <a href="https://ink.ai" target="_blank" rel="noreferrer">
           Ink AI
+        </a>{' '}
+        and as an AI Lead Engineer at{' '}
+        <a href="https://primegate.net.sa/" target="_blank" rel="noreferrer">
+          PrimeGate
         </a>
         . I'm passionate about transforming complex challenges into elegant, production-ready AI
         solutions.

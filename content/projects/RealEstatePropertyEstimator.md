@@ -1,6 +1,6 @@
 ---
 date: '2023-06-01'
-title: 'RealEstate Property Estimator AI'
+title: 'Real Estate Property Estimator AI'
 github: 'https://github.com/Nouman945'
 external: ''
 tech:
