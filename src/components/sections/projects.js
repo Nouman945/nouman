@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { Link, useStaticQuery, graphql } from 'gatsby';
 import styled from 'styled-components';
 import { srConfig } from '@config';
@@ -25,111 +25,159 @@ const StyledProjectsSection = styled.section`
     }
   }
 
-  .project-group {
-    width: 100%;
-    margin-top: 50px;
-  }
-
-  .group-label {
+  .filters {
     display: flex;
-    align-items: center;
-    width: 100%;
-    margin: 0 0 10px;
-    color: var(--green);
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 40px;
+  }
+
+  .filter-chip {
+    padding: 6px 14px;
+    border: 1px solid var(--lightest-navy);
+    border-radius: 50px;
+    background-color: transparent;
+    color: var(--light-slate);
     font-family: var(--font-mono);
-    font-size: var(--fz-sm);
-    font-weight: 400;
-    white-space: nowrap;
+    font-size: var(--fz-xs);
+    cursor: pointer;
+    transition: var(--transition);
 
-    &:after {
-      content: '';
-      display: block;
-      position: relative;
-      width: 100%;
-      height: 1px;
-      margin-left: 20px;
-      background-color: var(--lightest-navy);
+    &:hover {
+      border-color: var(--green);
+      color: var(--green);
     }
-  }
 
-  .project-list {
-    ${({ theme }) => theme.mixins.resetList};
-  }
-`;
-
-const StyledProjectRow = styled.li`
-  position: relative;
-  padding: 20px 25px;
-  border-radius: var(--border-radius);
-  transition: var(--transition);
-
-  @media (max-width: 768px) {
-    padding: 20px 15px;
-  }
-
-  &:hover,
-  &:focus-within {
-    background-color: var(--light-navy);
-
-    .project-title,
-    .project-title a {
+    &.active {
+      border-color: var(--green);
+      background-color: rgba(100, 255, 218, 0.1);
       color: var(--green);
     }
   }
 
-  .row-header {
-    ${({ theme }) => theme.mixins.flexBetween};
-    align-items: baseline;
-    margin-bottom: 8px;
+  .timeline {
+    width: 100%;
+    margin-top: 50px;
+  }
+`;
+
+const StyledYearGroup = styled.div`
+  display: grid;
+  grid-template-columns: 80px 1fr;
+
+  @media (max-width: 600px) {
+    grid-template-columns: 50px 1fr;
   }
 
-  .project-title {
+  .year-label {
+    color: var(--green);
+    font-family: var(--font-mono);
+    font-size: var(--fz-lg);
+    font-weight: 400;
+    margin: 0;
+    padding-top: 18px;
+
+    @media (max-width: 600px) {
+      font-size: var(--fz-sm);
+      padding-top: 22px;
+    }
+  }
+
+  .year-entries {
+    ${({ theme }) => theme.mixins.resetList};
+    border-left: 1px solid var(--lightest-navy);
+    padding: 10px 0 30px 30px;
+
+    @media (max-width: 600px) {
+      padding-left: 20px;
+    }
+  }
+`;
+
+const StyledEntry = styled.li`
+  position: relative;
+  padding: 8px 0;
+
+  &:not(:last-of-type) {
+    margin-bottom: 25px;
+  }
+
+  &:before {
+    content: '';
+    position: absolute;
+    top: 18px;
+    left: -35px;
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    background-color: var(--navy);
+    border: 2px solid var(--green);
+    transition: var(--transition);
+
+    @media (max-width: 600px) {
+      left: -25px;
+    }
+  }
+
+  &:hover:before {
+    background-color: var(--green);
+  }
+
+  &:hover .entry-title,
+  &:hover .entry-title a {
+    color: var(--green);
+  }
+
+  .entry-header {
+    display: flex;
+    align-items: baseline;
+    flex-wrap: wrap;
+    gap: 4px 12px;
+    margin-bottom: 6px;
+  }
+
+  .entry-title {
     margin: 0;
     color: var(--lightest-slate);
-    font-size: var(--fz-xl);
+    font-size: var(--fz-lg);
     font-weight: 600;
     transition: var(--transition);
 
     a {
-      position: static;
       color: inherit;
-
-      &:before {
-        content: '';
-        display: block;
-        position: absolute;
-        z-index: 0;
-        width: 100%;
-        height: 100%;
-        top: 0;
-        left: 0;
-      }
     }
   }
 
-  .project-links {
+  .entry-source {
+    color: var(--green);
+    font-family: var(--font-mono);
+    font-size: var(--fz-xxs);
+  }
+
+  .entry-links {
     display: flex;
     align-items: center;
-    flex-shrink: 0;
-    margin-left: 15px;
-    color: var(--light-slate);
 
     a {
       ${({ theme }) => theme.mixins.flexCenter};
-      position: relative;
-      z-index: 1;
-      padding: 5px 7px;
+      padding: 2px 5px;
+      color: var(--light-slate);
 
       svg {
-        width: 20px;
-        height: 20px;
+        width: 16px;
+        height: 16px;
+      }
+
+      &:hover {
+        color: var(--green);
       }
     }
   }
 
-  .project-description {
+  .entry-description {
     color: var(--light-slate);
-    font-size: var(--fz-md);
+    font-size: var(--fz-sm);
 
     p {
       margin: 0;
@@ -137,16 +185,14 @@ const StyledProjectRow = styled.li`
 
     a {
       ${({ theme }) => theme.mixins.inlineLink};
-      position: relative;
-      z-index: 1;
     }
   }
 
-  .project-tech-list {
+  .entry-tech {
     ${({ theme }) => theme.mixins.resetList};
     display: flex;
     flex-wrap: wrap;
-    margin-top: 10px;
+    margin-top: 8px;
 
     li {
       color: var(--slate);
@@ -163,7 +209,7 @@ const StyledProjectRow = styled.li`
   }
 `;
 
-const CATEGORY_ORDER = ['Generative AI', 'Computer Vision', 'Data & Analytics', 'Web & Tools'];
+const FILTERS = ['All', 'Generative AI', 'Computer Vision', 'Data & Analytics', 'Web & Tools'];
 
 const Projects = () => {
   const data = useStaticQuery(graphql`
@@ -183,6 +229,8 @@ const Projects = () => {
               github
               external
               category
+              company
+              date
             }
             html
           }
@@ -191,9 +239,10 @@ const Projects = () => {
     }
   `);
 
+  const [activeFilter, setActiveFilter] = useState('All');
   const revealTitle = useRef(null);
   const revealArchiveLink = useRef(null);
-  const revealGroups = useRef([]);
+  const revealTimeline = useRef(null);
   const prefersReducedMotion = usePrefersReducedMotion();
 
   useEffect(() => {
@@ -203,32 +252,27 @@ const Projects = () => {
 
     sr.reveal(revealTitle.current, srConfig());
     sr.reveal(revealArchiveLink.current, srConfig());
-    revealGroups.current.forEach((ref, i) => sr.reveal(ref, srConfig(i * 100)));
+    sr.reveal(revealTimeline.current, srConfig());
   }, []);
 
   const projects = data.projects.edges.filter(({ node }) => node);
 
-  const groups = CATEGORY_ORDER.map(category => ({
-    category,
-    items: projects.filter(({ node }) => node.frontmatter.category === category),
-  })).filter(group => group.items.length > 0);
+  const filtered =
+    activeFilter === 'All'
+      ? projects
+      : projects.filter(({ node }) => node.frontmatter.category === activeFilter);
 
-  const uncategorized = projects.filter(
-    ({ node }) => !CATEGORY_ORDER.includes(node.frontmatter.category),
-  );
-  if (uncategorized.length > 0) {
-    groups.push({ category: 'More Projects', items: uncategorized });
-  }
+  const years = [...new Set(filtered.map(({ node }) => node.frontmatter.date.slice(0, 4)))];
 
-  const projectRow = (node, key) => {
+  const entry = (node, key) => {
     const { frontmatter, html } = node;
-    const { github, external, title, tech } = frontmatter;
+    const { github, external, title, tech, company } = frontmatter;
     const titleLink = external || github;
 
     return (
-      <StyledProjectRow key={key}>
-        <div className="row-header">
-          <h3 className="project-title">
+      <StyledEntry key={key}>
+        <div className="entry-header">
+          <h3 className="entry-title">
             {titleLink ? (
               <a href={titleLink} target="_blank" rel="noreferrer">
                 {title}
@@ -237,30 +281,33 @@ const Projects = () => {
               title
             )}
           </h3>
-          <div className="project-links">
-            {github && (
-              <a href={github} aria-label="GitHub Link" target="_blank" rel="noreferrer">
-                <Icon name="GitHub" />
-              </a>
-            )}
-            {external && (
-              <a href={external} aria-label="External Link" target="_blank" rel="noreferrer">
-                <Icon name="External" />
-              </a>
-            )}
-          </div>
+          <span className="entry-source">{company ? `@ ${company}` : 'Personal'}</span>
+          {(github || external) && (
+            <div className="entry-links">
+              {github && (
+                <a href={github} aria-label="GitHub Link" target="_blank" rel="noreferrer">
+                  <Icon name="GitHub" />
+                </a>
+              )}
+              {external && (
+                <a href={external} aria-label="External Link" target="_blank" rel="noreferrer">
+                  <Icon name="External" />
+                </a>
+              )}
+            </div>
+          )}
         </div>
 
-        <div className="project-description" dangerouslySetInnerHTML={{ __html: html }} />
+        <div className="entry-description" dangerouslySetInnerHTML={{ __html: html }} />
 
         {tech && (
-          <ul className="project-tech-list">
+          <ul className="entry-tech">
             {tech.map((item, i) => (
               <li key={i}>{item}</li>
             ))}
           </ul>
         )}
-      </StyledProjectRow>
+      </StyledEntry>
     );
   };
 
@@ -274,15 +321,29 @@ const Projects = () => {
         view the archive
       </Link>
 
-      {groups.map(({ category, items }, groupIndex) => (
-        <div
-          className="project-group"
-          key={category}
-          ref={el => (revealGroups.current[groupIndex] = el)}>
-          <h3 className="group-label">{category}</h3>
-          <ul className="project-list">{items.map(({ node }, i) => projectRow(node, i))}</ul>
-        </div>
-      ))}
+      <div className="filters">
+        {FILTERS.map(filter => (
+          <button
+            key={filter}
+            className={`filter-chip ${activeFilter === filter ? 'active' : ''}`}
+            onClick={() => setActiveFilter(filter)}>
+            {filter}
+          </button>
+        ))}
+      </div>
+
+      <div className="timeline" ref={revealTimeline}>
+        {years.map(year => (
+          <StyledYearGroup key={year}>
+            <h3 className="year-label">{year}</h3>
+            <ul className="year-entries">
+              {filtered
+                .filter(({ node }) => node.frontmatter.date.slice(0, 4) === year)
+                .map(({ node }, i) => entry(node, i))}
+            </ul>
+          </StyledYearGroup>
+        ))}
+      </div>
     </StyledProjectsSection>
   );
 };
