@@ -77,6 +77,8 @@ exports.createSchemaCustomization = ({ actions }) => {
       date: Date
       title: String
       tags: [String]
+      ios: String
+      android: String
       # Add any other fields you're using in your frontmatter
     }
   `;
